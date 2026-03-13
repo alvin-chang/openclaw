@@ -111,7 +111,7 @@ async function testConcurrencyImprovements() {
       executeWithSelectiveConcurrency({
         type: op.type,
         fn: op.fn,
-        priority: 5, // numeric priority
+        priority: op.priority,
       }),
     ),
   );
